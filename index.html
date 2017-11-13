@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>game me</title>
+  <link href="https://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="_Css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="_Css/style.css">
+
+</head>
+<body>
+
+<div class="container-fluid">
+
+  <div class="row justify-content-center">
+
+    <div class="col-3">
+
+<fieldset>
+ <legend>Respuestas</legend>
+ <label for="guess">Adivina y dime klk:</label>
+ <input type="text" id="guess" value="$" />
+ <input type="button" onclick="yourGuess()" value="submit" /><br />
+ <input type="button" id="showguesses" onclick="showGuesses()" value="dimelo to" />  
+ <input type="button" onclick="generateNumberToGuess(true)" value="Otro número" /><br />
+ <div id="cheatShow" style="display: none;">
+  <input id="numberToGuess" type="text" />
+  <label for="numberToGuess">Numero adivinar</label>
+ </div>
+</fieldset>
+<fieldset id="guesses" class="guesses">
+ <legend> Resultados </legend>
+ <textarea id="output" name="output" rows="5" style="width: 100%;"></textarea>
+</fieldset>
+    
+    </div>
+
+  </div>
+
+</div>
+
+
+<script type="text/javascript" src="_Script/jquery.min.js"></script>
+<script type="text/javascript" src="_Script/popper.min.js"></script>
+<script type="text/javascript" src="_Script/bootstrap.js"></script>
+<script type="text/javascript" src="_Script/script.js"></script>
+
+</body>
+</html>
